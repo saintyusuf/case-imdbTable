@@ -4,9 +4,9 @@ import { ChakraProvider } from "@chakra-ui/react"
 import { HelmetProvider } from "react-helmet-async"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 
-import HomePage from "./pages/homePage";
-import DetailPage from "./pages/detailPage"
-
+// PAGES
+import HomePage from "./pages/home.page";
+import DetailPage from "./pages/detail.page"
 
 const container = document.getElementById("root")
 if (!container) throw new Error('Failed to find the root element');
