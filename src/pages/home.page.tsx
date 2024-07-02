@@ -62,7 +62,7 @@ const HomePage = () => {
 
     setLoading(true)
 
-    axios(`http://www.omdbapi.com/?apikey=f059145a&s=${search().get}&y=${year().get}&type=${type().get}&page=${page().get}`).then((res)=>{
+    axios(`https://www.omdbapi.com/?apikey=f059145a&s=${search().get}&y=${year().get}&type=${type().get}&page=${page().get}`).then((res)=>{
       setData(res.data.Search)
       setResults(res.data.totalResults)
       setPages(Math.ceil(Number(res.data.totalResults)/10))

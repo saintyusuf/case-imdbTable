@@ -15,7 +15,7 @@ const DetailPage = () => {
 
   function getData(){
 
-    axios(`http://www.omdbapi.com/?apikey=f059145a&i=${imdbId}`).then((res:{data:InterfaceMovie})=>{
+    axios(`https://www.omdbapi.com/?apikey=f059145a&i=${imdbId}`).then((res:{data:InterfaceMovie})=>{
       setData(res.data)
     }).catch((err)=>{
       console.log(err)
